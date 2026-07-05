@@ -1,11 +1,11 @@
-# @Program: KBC Projects in Python
-# @Author: Saloni Malhotra
-# @Date: 05-7-2027
-
+# @title: Quiz Game Project Mock Data
 # @description:
 #     Create a program capable of displaying questions to the user like KBC
-#     Use List data type to store the questions and their correct answers
+#     Use List data type & Dictionary Data type both to store the questions and their correct answers
 #     Display the final amount the person is taking home after playing the game
+# @Author: Saloni Malhotra
+# @Date: 05-06-2026
+
 
 kbcQuestions = [
     [
@@ -145,6 +145,96 @@ kbcQuestions = [
     ],
 ]
 
+
+quizQuestions = [
+    {
+        "question": "What is the capital of India?",
+        "options": ["Mumbai", "New Delhi", "Chennai", "Kolkata"],
+        "answer": 2,
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Earth", "Jupiter", "Mars", "Venus"],
+        "answer": 3,
+    },
+    {
+        "question": "Who is known as the Father of Computers?",
+        "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
+        "answer": 1,
+    },
+    {
+        "question": "Which programming language is primarily used with React?",
+        "options": ["Python", "Java", "JavaScript", "C++"],
+        "answer": 3,
+    },
+    {
+        "question": "Which keyword is used to define a function in Python?",
+        "options": ["func", "define", "function", "def"],
+        "answer": 4,
+    },
+    {
+        "question": "Which company developed React?",
+        "options": ["Google", "Microsoft", "Meta (Facebook)", "Amazon"],
+        "answer": 3,
+    },
+    {
+        "question": "Which HTML tag is used to create a hyperlink?",
+        "options": ["<a>", "<p>", "<img>", "<link>"],
+        "answer": 1,
+    },
+    {
+        "question": "Which CSS property is used to change the text color?",
+        "options": ["font-color", "text-color", "color", "background-color"],
+        "answer": 3,
+    },
+    {
+        "question": "Which Python data type is immutable?",
+        "options": ["List", "Dictionary", "Set", "Tuple"],
+        "answer": 4,
+    },
+    {
+        "question": "Which operator is used for exponentiation in Python?",
+        "options": ["^", "**", "//", "%"],
+        "answer": 2,
+    },
+    {
+        "question": "What does API stand for?",
+        "options": [
+            "Application Programming Interface",
+            "Advanced Programming Interface",
+            "Application Process Integration",
+            "Automated Programming Interface",
+        ],
+        "answer": 1,
+    },
+    {
+        "question": "Which JavaScript method prints output to the browser console?",
+        "options": ["print()", "console.log()", "echo()", "display()"],
+        "answer": 2,
+    },
+    {
+        "question": "Which symbol is used for comments in Python?",
+        "options": ["//", "#", "/* */", "--"],
+        "answer": 2,
+    },
+    {
+        "question": "Which data structure follows the FIFO principle?",
+        "options": ["Stack", "Queue", "Tree", "Graph"],
+        "answer": 2,
+    },
+    {
+        "question": "Who created the Python programming language?",
+        "options": [
+            "Dennis Ritchie",
+            "James Gosling",
+            "Guido van Rossum",
+            "Bjarne Stroustrup",
+        ],
+        "answer": 3,
+    },
+]
+
+
 levels = [
     1000,
     2000,
@@ -162,41 +252,3 @@ levels = [
     5000000,
     10000000,
 ]
-takeHomeMoney = 0
-
-
-def format_money(amount):
-    return f"₹{amount:,}"
-
-
-for i in range(0, len(kbcQuestions)):
-    question = kbcQuestions[i]
-    level = levels[i]
-    print(f"\nQuestion for Rs. {level}")
-    print(question[0])
-
-    print(f"1. {question[1]}")
-    print(f"2. {question[2]}")
-    print(f"3. {question[3]}")
-    print(f"4. {question[4]}")
-
-    reply = input("Enter your answer (1-4) or type 'yes' to quit: ")
-    print(i)
-    if reply.lower() == "yes":
-        print(f"Opps! You have quit the game")
-        if i > 0:
-            takeHomeMoney = levels[i - 1]
-    elif int(reply) == question[6]:
-        print(f"Correct Answer you have won Rs: {format_money(level)}")
-        if i == 4:
-            takeHomeMoney = 10000
-        if i == 9:
-            takeHomeMoney = 320000
-        if i == 14:
-            takeHomeMoney = 10000000
-    else:
-        print("Wrong Answer")
-        break
-    print("\n")
-
-print(f"Your take home money is: Rs. {format_money(takeHomeMoney)}")
