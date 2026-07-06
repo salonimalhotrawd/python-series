@@ -1,17 +1,15 @@
 # 🐍 Python Series
 
-A structured Python learning repository containing tutorials, coding examples, and hands-on projects.
+A structured Python learning repository containing tutorials and coding examples.
 
 ## 📂 Repository Structure
 
 ```
 python-series/
 │
-├── tutorials/          # Python concepts and examples
-├── projects/           # Mini Python projects
+├── tutorials/          # Python concepts and examples          
 └── README.md
 ```
-
 ---
 
 ## 📚 Tutorials Covered
@@ -32,12 +30,6 @@ python-series/
 - Exception Handling
 - Object-Oriented Programming (OOP)
 - Modules & Packages
-
----
-
-## 💻 Projects
-
-This repository also contains beginner-friendly Python projects
 
 ---
 
@@ -82,7 +74,6 @@ This repository is created to:
 
 - Learn Python from basics to advanced
 - Practice coding concepts
-- Build hands-on projects
 - Prepare for coding interviews
 
 ---
