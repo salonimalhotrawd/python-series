@@ -36,12 +36,14 @@ print(factorial(3)) # 6
 
 # 5th Program of import
 # ---------------------------------------------------------------------
-# from math import sqrt, factorial
-# print(sqrt(2)) # 1.4142135623730951
-# print(factorial(3)) # 6
+
+from math import sqrt, factorial
+print(sqrt(2)) # 1.4142135623730951
+print(factorial(3)) # 6
 
 # 6th Program of import
 # ---------------------------------------------------------------------
-# from math import sqrt, factorial as fct
-# print(sqrt(2)) # 1.4142135623730951
-# print(fct(3)) # 6
+
+from math import sqrt, factorial as fct
+print(sqrt(2)) # 1.4142135623730951
+print(fct(3)) # 6
