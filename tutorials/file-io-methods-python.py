@@ -5,55 +5,55 @@
 # 1st Program Reading the file
 # ____________________________________________________________
 
-# flOpen = open("fileIO2.txt", "r")
-# i = 0
-# while True:
-#     i += 1
-#     line = flOpen.readline()
-#     if not line:
-#         break
-#     print(line)
-#     print(i)  # 1,2,3,4 (loop runs 4 times)
+flOpen = open("fileIO2.txt", "r")
+i = 0
+while True:
+    i += 1
+    line = flOpen.readline()
+    if not line:
+        break
+    print(line)
+    print(i)  # 1,2,3,4 (loop runs 4 times)
 
 
 # 2nd Program Reading the file
 # ____________________________________________________________________________
 
-# flOpenRead = open("fileIO3.txt", "r")
-# j = 0
-# while True:
-#     j += 1
-#     line = flOpenRead.read()
-#     if not line:
-#         break
-#     print(line)
-#     print(
-#         j
-#     )  # -> 1 (loop runs one time as it fetch all the content one time and print the data)
+flOpenRead = open("fileIO3.txt", "r")
+j = 0
+while True:
+    j += 1
+    line = flOpenRead.read()
+    if not line:
+        break
+    print(line)
+    print(
+        j
+    )  # -> 1 (loop runs one time as it fetch all the content one time and print the data)
 
 # 3rd Program
 # _________________________________________________________________________________
 
-# fl = open("fileIO3.txt", "r")
+fl = open("fileIO3.txt", "r")
 
-# while True:
-#     line = fl.readline()
+while True:
+    line = fl.readline()
 
-#     if not line:
-#         break
+    if not line:
+        break
 
-#     m1 = line.split(",")[0]
-#     m2 = line.split(",")[1]
-#     m3 = line.split(",")[2]
-#     m4 = line.split(",")[3]
+    m1 = line.split(",")[0]
+    m2 = line.split(",")[1]
+    m3 = line.split(",")[2]
+    m4 = line.split(",")[3]
 
-#     print("m1 value is:", m1)
-#     print("m2 value is:", m2)
-#     print("m3 value is:", m3)
-#     print("m4 value is:", m4)
-#     print(line)
+    print("m1 value is:", m1)
+    print("m2 value is:", m2)
+    print("m3 value is:", m3)
+    print("m4 value is:", m4)
+    print(line)
 
-# fl.close()
+fl.close()
 
 
 # 4th Program Write the Lines => writelines
@@ -93,7 +93,7 @@ books = [
     "B107,Deep Work,Cal Newport,Productivity\n",
     "B108,The Hobbit,J.R.R. Tolkien,Fantasy\n",
     "B109,Harry Potter,J.K. Rowling,Fantasy\n",
-    "B110,Rich Dad Poor Dad,Robert Kiyosaki,Finance\n"
+    "B110,Rich Dad Poor Dad,Robert Kiyosaki,Finance\n",
 ]
 
 for book in books:
