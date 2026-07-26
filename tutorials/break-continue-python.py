@@ -1,4 +1,4 @@
-# @Program: Break Cntinue Statement in python in Python
+# @Program: Break Cntinue Statement in python
 # @Author: Saloni Malhotra
 # @Date: 30-06-2026
 
